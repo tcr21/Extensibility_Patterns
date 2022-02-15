@@ -28,5 +28,4 @@ public class TriangleNumbersSequenceTest {
   public void canBeIteratedThrough() {
     assertThat(sequence, beginsWith(1, 3, 6, 10, 15));
   }
-
 }

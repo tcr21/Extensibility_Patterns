@@ -42,5 +42,4 @@ public class FibonacciSequenceTest {
   public void canBeIteratedThrough() {
     assertThat(sequence, beginsWith(1, 1, 2, 3, 5));
   }
-
 }

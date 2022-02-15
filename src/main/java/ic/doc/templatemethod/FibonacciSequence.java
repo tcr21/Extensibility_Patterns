@@ -11,5 +11,4 @@ public class FibonacciSequence extends Sequence {
     }
     return term(i - 1) + term(i - 2);
   }
-
 }

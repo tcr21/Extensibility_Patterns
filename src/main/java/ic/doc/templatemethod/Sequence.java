@@ -4,29 +4,29 @@ import java.util.Iterator;
 
 public abstract class Sequence implements Iterable<Integer> {
 
-    public abstract int term(int i);
+  public abstract int term(int i);
 
-    public Iterator<Integer> iterator() {
-        return new Sequence.SequenceIterator();
+  public Iterator<Integer> iterator() {
+    return new Sequence.SequenceIterator();
+  }
+
+  private class SequenceIterator implements Iterator<Integer> {
+
+    private int index = 0;
+
+    @Override
+    public boolean hasNext() {
+      return true;
     }
 
-    private class SequenceIterator implements Iterator<Integer> {
-
-        private int index = 0;
-
-        @Override
-        public boolean hasNext() {
-            return true;
-        }
-
-        @Override
-        public Integer next() {
-            return term(index++);
-        }
-
-        @Override
-        public void remove() {
-            throw new UnsupportedOperationException("remove is not implemented");
-        }
+    @Override
+    public Integer next() {
+      return term(index++);
     }
+
+    @Override
+    public void remove() {
+      throw new UnsupportedOperationException("remove is not implemented");
+    }
+  }
 }
