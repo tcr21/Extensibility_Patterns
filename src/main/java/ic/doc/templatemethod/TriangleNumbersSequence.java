@@ -1,6 +1,6 @@
 package ic.doc.templatemethod;
 
-public class TriangleNumbersSequence extends Sequence implements Iterable<Integer> {
+public class TriangleNumbersSequence extends Sequence {
 
     public int term(int i) {
         if (i < 0) {

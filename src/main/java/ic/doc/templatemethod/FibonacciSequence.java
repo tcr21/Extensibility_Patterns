@@ -1,6 +1,6 @@
 package ic.doc.templatemethod;
 
-public class FibonacciSequence extends Sequence implements Iterable<Integer> {
+public class FibonacciSequence extends Sequence {
 
   public int term(int i) {
     if (i < 0) {

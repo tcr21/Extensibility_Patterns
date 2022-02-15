@@ -1,5 +1,6 @@
 package ic.doc.strategy;
 
+import static ic.doc.matchers.IterableBeginsWith.beginsWith;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
@@ -21,6 +22,11 @@ public class FibonacciSequenceTest {
     assertThat(sequence.sequence.term(2), is(2));
     assertThat(sequence.sequence.term(3), is(3));
     assertThat(sequence.sequence.term(4), is(5));
+  }
+
+  @Test
+  public void canBeIteratedThrough() {
+    assertThat(sequence, beginsWith(1, 1, 2, 3, 5));
   }
 
 }

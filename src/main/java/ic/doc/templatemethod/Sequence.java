@@ -2,7 +2,7 @@ package ic.doc.templatemethod;
 
 import java.util.Iterator;
 
-public abstract class Sequence {
+public abstract class Sequence implements Iterable<Integer> {
 
     public abstract int term(int i);
 
