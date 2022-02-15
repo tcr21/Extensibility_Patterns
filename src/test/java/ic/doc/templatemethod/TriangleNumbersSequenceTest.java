@@ -13,7 +13,7 @@ public class TriangleNumbersSequenceTest {
   final TriangleNumbersSequence sequence = new TriangleNumbersSequence();
 
   @Test
-  public void definesSubsequentTermsToBeHalfProductOfNextTwo() {
+  public void definesSubsequentTermsToBeHalfProductOfNextTwoIndices() {
 
     assertThat(sequence.term(0), is(1));
     assertThat(sequence.term(1), is(3));
